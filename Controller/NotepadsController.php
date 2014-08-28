@@ -145,14 +145,14 @@ class NotepadsController extends NotepadsAppController {
  */
 	public function edit($frameId = 0) {
 		if (! $this->request->isPost()) {
-			return $this->_renderJson(400, __d('notepads', 'I failed to save'));
+			return $this->_renderJson(400, __d('notepads', 'Failed to save'));
 		}
 
 		//フレーム初期化処理
 		$this->_initializeFrame($frameId);
 		if (! $this->viewVars['contentEditable']) {
 			//権限エラー
-			return $this->_renderJson(401, __d('notepads', 'I failed to save'));
+			return $this->_renderJson(401, __d('notepads', 'Failed to save'));
 		}
 
 		//保存
@@ -164,7 +164,7 @@ class NotepadsController extends NotepadsAppController {
 		//成功結果を返す
 		if (! $rtn) {
 			//失敗結果を返す
-			return $this->_renderJson(500, __d('notepads', 'I failed to save'), $rtn);
+			return $this->_renderJson(500, __d('notepads', 'Failed to save'), $rtn);
 		} else {
 			return $this->_renderJson(200, __d('notepads', 'Saved'), $rtn);
 		}

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2014-08-28 02:49+0000\n"
-"PO-Revision-Date: 2014-08-28 13:33+0900\n"
+"PO-Revision-Date: 2014-08-29 07:26+0900\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -13,16 +13,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language: ja\n"
-"X-Generator: Poedit 1.6.8\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: Controller/NotepadsController.php:149;156;168
-msgid "I failed to save"
+msgid "Failed to save"
 msgstr "保存に失敗しました"
 
 #: Controller/NotepadsController.php:170
 msgid "Saved"
-msgstr "保存った！"
+msgstr "保存しました"
 
 #: View/Elements/index/form_button.ctp:17
 msgid "Cancel"
@@ -42,20 +42,29 @@ msgid "Draft"
 msgstr "下書き"
 
 #: View/Elements/index/form_button.ctp:45
-#: View/Elements/index/status_label.ctp:44
 msgid "Disapproval"
-msgstr "未認証"
+msgstr "差し戻す"
+
+#: View/Elements/index/status_label.ctp:44
+msgid "Disapprovign"
+msgstr "差し戻し"
 
 #: View/Elements/index/form_button.ctp:52
-#: View/Elements/index/status_label.ctp:28
 msgid "Approval"
-msgstr "認証"
+msgstr "承認する"
+
+#: View/Elements/index/status_label.ctp:28
+msgid "Approving"
+msgstr "承認中"
 
 #: View/Elements/index/form_button.ctp:59
 #: View/Elements/index/head_button.ctp:37
-#: View/Elements/index/status_label.ctp:20
 msgid "Publish"
-msgstr "公開"
+msgstr "公開する"
+
+#: View/Elements/index/status_label.ctp:20
+msgid "Publishing"
+msgstr "公開中"
 
 #: View/Elements/index/form_content.ctp:21
 msgid "Title"
@@ -63,7 +72,7 @@ msgstr "タイトル"
 
 #: View/Elements/index/form_content.ctp:35
 msgid "Content"
-msgstr "コンテンツ"
+msgstr "内容"
 
 #: View/Elements/index/head_button.ctp:19
 msgid "Block setting"
@@ -71,7 +80,7 @@ msgstr "ブロック設定"
 
 #: View/Elements/index/head_button.ctp:28
 msgid "Edit"
-msgstr "修正"
+msgstr "編集"
 
 #: Model/Archive.php:validation for field parent_model_name;validation
 #: model_name;validation title;validation content;validation
